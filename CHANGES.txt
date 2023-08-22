@@ -1,0 +1,5 @@
+# Change Log / journal des changements
+
+# 22/08/2023
+## IMPLEMENTATION OF CHORUS API
+*

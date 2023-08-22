@@ -1,0 +1,7 @@
+# DEV
+CLIENT_ID = "xxx"
+CLIENT_SECRET = "xxx"
+TECH_USERNAME = "xxx"
+TECH_PASSWORD = "xxxx"
+
+SANDBOX = True
