@@ -1,6 +1,6 @@
-# CHORUS API
+# CHORUS-API / PISTE.GOUV.FR
 
-# chorusapi [![Downloads](https://static.pepy.tech/personalized-badge/chorusapi?period=total&units=international_system&left_color=black&right_color=orange&left_text=Downloads)](https://pepy.tech/project/izi18n)
+# chorus-api [![Downloads](https://static.pepy.tech/personalized-badge/chorus-api?period=total&units=international_system&left_color=black&right_color=orange&left_text=Downloads)](https://pepy.tech/project/chorus-api)
 
 Chorus API Package [https://piste.gouv.fr](https://piste.gouv.fr)
 
