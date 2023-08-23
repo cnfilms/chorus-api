@@ -14,11 +14,12 @@ class Structures(API):
 
     def rechercher_structure(self, siret, type_identifiant="SIRET"):
         """
-        : La méthode rechercherStructure permet à un gestionnaire de rechercher des structures.
+        La méthode rechercherStructure permet à un gestionnaire de rechercher des structures.
 
-        :param siret:
-        :param type_identifiant:
-        :return: {RechercheStructureResponse}
+        `siret`
+        `type_identifiant` default is `SIRET`
+
+        :return `chorusapi.responses.api_response.RechercheStructureResponse`
         """
         _url = "{}/cpro/structures/v1/rechercher".format(self.api_url)
 
@@ -39,11 +40,12 @@ class Structures(API):
 
     def rechercher_services(self, id_structure):
         """
-        : La méthode rechercherServicesStructure permet de rechercher les services appartenant à une structure publique
-         ou à une structure à laquelle l'utilisateur est rattaché.
+        La méthode rechercherServicesStructure permet de rechercher les services appartenant à une structure publique
+        ou à une structure à laquelle l'utilisateur est rattaché.
 
-        :param id_structure:
-        :return {RechercheServiceResponse}
+        `id_structure`
+
+        :return `chorusapi.responses.api_response.RechercheServiceResponse`
         """
         _url = "{}/cpro/structures/v1/rechercher/services".format(self.api_url)
 
@@ -61,12 +63,13 @@ class Structures(API):
 
     def consulter_structure(self, id_structure_cpp, code_langue="fr"):
         """
-        : La méthode consulterStructure permet de consulter les informations relatives à une structure à laquelle
-         l'utilisateur est rattaché ou une structure publique.
+        La méthode consulterStructure permet de consulter les informations relatives à une structure à laquelle
+        l'utilisateur est rattaché ou une structure publique.
 
-        :param id_structure_cpp:
-        :param code_langue:
-        :return {ConsulterStructureResponse}
+        `id_structure_cpp`
+        `code_langue` default is `fr`
+
+        :return `chorusapi.responses.api_response.ConsulterStructureResponse`
         """
 
         _url = "{}/cpro/structures/v1/consulter".format(self.api_url)

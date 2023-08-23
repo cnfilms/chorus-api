@@ -56,8 +56,8 @@
 <span>def <span class="ident">annuaire_destinataire</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<div class="desc"><p>La méthode TelechargerAnnuaireDestinataire permet de récupérer l’annuaire des destinataires.
-:return: {AnnuaireDestinataireResponse}</p></div>
+<div class="desc"><p>La méthode TelechargerAnnuaireDestinataire permet de récupérer l’annuaire des destinataires.</p>
+<p>:return <code><a title="chorusapi.responses.api_response.AnnuaireDestinataireResponse" href="../responses/api_response.html#chorusapi.responses.api_response.AnnuaireDestinataireResponse">AnnuaireDestinataireResponse</a></code></p></div>
 </dd>
 <dt id="chorusapi.models.transverses.Transverses.consulter_cr"><code class="name flex">
 <span>def <span class="ident">consulter_cr</span></span>(<span>self, numero_flux_depot)</span>
@@ -65,8 +65,9 @@
 <dd>
 <div class="desc"><p>Le service ConsulterCR permet de consulter les informations liées au dépôt d'un flux et de récupérer au
 format PDF le compte rendu de traitement du flux déposé via le portail ou le service exposé
-DeposerFluxFacture.
-:param numero_flux_depot: :return: {StatusDeposeResponse}</p></div>
+DeposerFluxFacture.</p>
+<p><code>numero_flux_depot</code></p>
+<p>:return <code><a title="chorusapi.responses.api_response.ConsulterCrResponse" href="../responses/api_response.html#chorusapi.responses.api_response.ConsulterCrResponse">ConsulterCrResponse</a></code></p></div>
 </dd>
 <dt id="chorusapi.models.transverses.Transverses.consulter_cr_detaille"><code class="name flex">
 <span>def <span class="ident">consulter_cr_detaille</span></span>(<span>self, numero_flux_depot)</span>
@@ -74,31 +75,34 @@ DeposerFluxFacture.
 <dd>
 <div class="desc"><p>Le service ConsulterCRDetaille permet de consulter l'état d'intégration d'un flux émis en API,
 avec le cas échéant les erreurs identifiées par le système pour l'irrecevabilité du flux
-ou le rejet d'une ou plusieurs demandes de paiement.
-:param numero_flux_depot: :return: {ConsulterCrDetailleResponse}</p></div>
+ou le rejet d'une ou plusieurs demandes de paiement.</p>
+<p><code>numero_flux_depot</code></p>
+<p>:return <code><a title="chorusapi.responses.api_response.ConsulterCrDetailleResponse" href="../responses/api_response.html#chorusapi.responses.api_response.ConsulterCrDetailleResponse">ConsulterCrDetailleResponse</a></code></p></div>
 </dd>
 <dt id="chorusapi.models.transverses.Transverses.devises"><code class="name flex">
 <span>def <span class="ident">devises</span></span>(<span>self, code_langue='FR')</span>
 </code></dt>
 <dd>
 <div class="desc"><p>La méthode recupererDevise permet de récupérer la liste des codes devises
-pouvant être renseignées lors de la saisie d'une facture.
-:return: {RecupererDevisesResponse}</p></div>
+pouvant être renseignées lors de la saisie d'une facture.</p>
+<p><code>code_langue</code> default is <code>FR</code></p>
+<p>:return <code><a title="chorusapi.responses.api_response.RecupererDevisesResponse" href="../responses/api_response.html#chorusapi.responses.api_response.RecupererDevisesResponse">RecupererDevisesResponse</a></code></p></div>
 </dd>
 <dt id="chorusapi.models.transverses.Transverses.health_check"><code class="name flex">
 <span>def <span class="ident">health_check</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<div class="desc"><p>Permet de vérifier la disponibilité des API CPRO
-:return: {HealthCheckResponse}</p></div>
+<div class="desc"><p>Permet de vérifier la disponibilité des API CPRO.</p>
+<p>:return <code><a title="chorusapi.responses.api_response.HealthCheckResponse" href="../responses/api_response.html#chorusapi.responses.api_response.HealthCheckResponse">HealthCheckResponse</a></code></p></div>
 </dd>
 <dt id="chorusapi.models.transverses.Transverses.information_siret"><code class="name flex">
 <span>def <span class="ident">information_siret</span></span>(<span>self, siret_structure)</span>
 </code></dt>
 <dd>
 <div class="desc"><p>La méthode consulterInformationSIRET permet de récupérer les données de la structure de type SIRET correspondant
-aux paramètres dans le référentiel de l'INSEE (service exposé ne fonctionnant pas sur l'espace de qualification).
-:param siret_structure: :return: {InformationSiretResponse}</p></div>
+aux paramètres dans le référentiel de l'INSEE (service exposé ne fonctionnant pas sur l'espace de qualification).</p>
+<p>siret_structure</p>
+<p>:return <code><a title="chorusapi.responses.api_response.InformationSiretResponse" href="../responses/api_response.html#chorusapi.responses.api_response.InformationSiretResponse">InformationSiretResponse</a></code></p></div>
 </dd>
 </dl>
 <h3>Inherited members</h3>

@@ -6,3 +6,4 @@
 
 # 23/08/2023
 ## Add Etat courant du flux pour la methode consulter CR
+## Reformat code and documentation

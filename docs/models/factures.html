@@ -56,22 +56,22 @@
 <span>def <span class="ident">deposer_flux</span></span>(<span>self, fichier_flux, file_name, avec_signature=False, syntaxe_flux='IN_DP_E2_CII_FACTURX')</span>
 </code></dt>
 <dd>
-<div class="desc"><p>: La méthode deposerFluxFacture permet de déposer un fichier XML ou PDF/A3 permettant de renseigner les données
-nécessaires à la constitution d'un flux facture.
-:param fichier_flux: Le fichier facture encodé en base64
-:param file_name: Le nom du fichier + extension
-:param avec_signature:
-:param syntaxe_flux:
-:return: {DeposerFluxResponse}</p></div>
+<div class="desc"><p>La méthode deposerFluxFacture permet de déposer un fichier XML ou PDF/A3 permettant de renseigner les données
+nécessaires à la constitution d'un flux facture.</p>
+<p><code>fichier_flux</code>: Le fichier facture encodé en base64
+<code>file_name</code>: Le nom du fichier + extension
+<code>avec_signature</code>: default <code>False</code>
+<code>syntaxe_flux</code>: default is <code><a title="chorusapi.constants.syntax_flux_constant.SyntaxFlux.IN_DP_E2_CII_FACTURX" href="../constants/syntax_flux_constant.html#chorusapi.constants.syntax_flux_constant.SyntaxFlux.IN_DP_E2_CII_FACTURX">SyntaxFlux.IN_DP_E2_CII_FACTURX</a></code></p>
+<p>:return <code><a title="chorusapi.responses.api_response.DeposerFluxResponse" href="../responses/api_response.html#chorusapi.responses.api_response.DeposerFluxResponse">DeposerFluxResponse</a></code></p></div>
 </dd>
 <dt id="chorusapi.models.factures.Factures.rechercher_facture"><code class="name flex">
 <span>def <span class="ident">rechercher_facture</span></span>(<span>self, numero_flux_depot)</span>
 </code></dt>
 <dd>
-<div class="desc"><p>: La méthode rechercherFactureParFournisseur permet d'afficher les factures émises correspondant aux paramètres
-de recherche renseignés.
-:param numero_flux_depot:
-:return: {RechercheFactureResponse}</p></div>
+<div class="desc"><p>La méthode rechercherFactureParFournisseur permet d'afficher les factures émises correspondant aux paramètres
+de recherche renseignés.</p>
+<p><code>numero_flux_depot</code></p>
+<p>:return <code><a title="chorusapi.responses.api_response.RechercheFactureResponse" href="../responses/api_response.html#chorusapi.responses.api_response.RechercheFactureResponse">RechercheFactureResponse</a></code></p></div>
 </dd>
 </dl>
 <h3>Inherited members</h3>

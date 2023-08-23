@@ -13,13 +13,15 @@ class Factures(API):
     def deposer_flux(self, fichier_flux, file_name, avec_signature=False,
                      syntaxe_flux=SyntaxFlux.IN_DP_E2_CII_FACTURX):
         """
-        : La méthode deposerFluxFacture permet de déposer un fichier XML ou PDF/A3 permettant de renseigner les données
+        La méthode deposerFluxFacture permet de déposer un fichier XML ou PDF/A3 permettant de renseigner les données
         nécessaires à la constitution d'un flux facture.
-        :param fichier_flux: Le fichier facture encodé en base64
-        :param file_name: Le nom du fichier + extension
-        :param avec_signature:
-        :param syntaxe_flux:
-        :return: {DeposerFluxResponse}
+
+        `fichier_flux`: Le fichier facture encodé en base64
+        `file_name`: Le nom du fichier + extension
+        `avec_signature`: default `False`
+        `syntaxe_flux`: default is `chorusapi.constants.syntax_flux_constant.SyntaxFlux.IN_DP_E2_CII_FACTURX`
+
+        :return `chorusapi.responses.api_response.DeposerFluxResponse`
         """
         headers = self._make_headers()
         data = {
@@ -40,10 +42,12 @@ class Factures(API):
 
     def rechercher_facture(self, numero_flux_depot):
         """
-        : La méthode rechercherFactureParFournisseur permet d'afficher les factures émises correspondant aux paramètres
+        La méthode rechercherFactureParFournisseur permet d'afficher les factures émises correspondant aux paramètres
         de recherche renseignés.
-        :param numero_flux_depot:
-        :return: {RechercheFactureResponse}
+
+        `numero_flux_depot`
+
+        :return `chorusapi.responses.api_response.RechercheFactureResponse`
         """
 
         _url = "{}/cpro/factures/v1/rechercher/fournisseur".format(self.api_url)
