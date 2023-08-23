@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 <meta name="generator" content="pdoc 0.10.0" />
-<title>chorusapi.constants.syntax_flux_constant API documentation</title>
+<title>chorusapi.constants.etat_courant_flux API documentation</title>
 <meta name="description" content="" />
 <link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
 <link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
@@ -19,7 +19,7 @@
 <main>
 <article id="content">
 <header>
-<h1 class="title">Module <code>chorusapi.constants.syntax_flux_constant</code></h1>
+<h1 class="title">Module <code>chorusapi.constants.etat_courant_flux</code></h1>
 </header>
 <section id="section-intro">
 </section>
@@ -32,38 +32,58 @@
 <section>
 <h2 class="section-title" id="header-classes">Classes</h2>
 <dl>
-<dt id="chorusapi.constants.syntax_flux_constant.SyntaxFlux"><code class="flex name class">
-<span>class <span class="ident">SyntaxFlux</span></span>
+<dt id="chorusapi.constants.etat_courant_flux.EtatCourantFlux"><code class="flex name class">
+<span>class <span class="ident">EtatCourantFlux</span></span>
 </code></dt>
 <dd>
-<div class="desc"></div>
+<div class="desc"><p>Le service ConsulterCR permet de consulter les informations liées au dépôt d'un flux et de récupérer au format
+PDF le compte rendu de traitement du flux déposé via le portail ou le service exposé DeposerFluxFacture.</p></div>
 <h3>Class variables</h3>
 <dl>
-<dt id="chorusapi.constants.syntax_flux_constant.SyntaxFlux.IN_DP_E1_CII_16B"><code class="name">var <span class="ident">IN_DP_E1_CII_16B</span></code></dt>
+<dt id="chorusapi.constants.etat_courant_flux.EtatCourantFlux.IN_EN_ATTENTE_RETRAITEMENT_CPP"><code class="name">var <span class="ident">IN_EN_ATTENTE_RETRAITEMENT_CPP</span></code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="chorusapi.constants.syntax_flux_constant.SyntaxFlux.IN_DP_E1_UBL_INVOICE"><code class="name">var <span class="ident">IN_DP_E1_UBL_INVOICE</span></code></dt>
+<dt id="chorusapi.constants.etat_courant_flux.EtatCourantFlux.IN_EN_ATTENTE_TRAITEMENT_CPP"><code class="name">var <span class="ident">IN_EN_ATTENTE_TRAITEMENT_CPP</span></code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="chorusapi.constants.syntax_flux_constant.SyntaxFlux.IN_DP_E2_CII_FACTURX"><code class="name">var <span class="ident">IN_DP_E2_CII_FACTURX</span></code></dt>
+<dt id="chorusapi.constants.etat_courant_flux.EtatCourantFlux.IN_EN_COURS_TRAITEMENT_CPP"><code class="name">var <span class="ident">IN_EN_COURS_TRAITEMENT_CPP</span></code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="chorusapi.constants.syntax_flux_constant.SyntaxFlux.IN_DP_E2_CII_MIN_16B"><code class="name">var <span class="ident">IN_DP_E2_CII_MIN_16B</span></code></dt>
+<dt id="chorusapi.constants.etat_courant_flux.EtatCourantFlux.IN_INCIDENTE"><code class="name">var <span class="ident">IN_INCIDENTE</span></code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="chorusapi.constants.syntax_flux_constant.SyntaxFlux.IN_DP_E2_CPP_FACTURE_MIN"><code class="name">var <span class="ident">IN_DP_E2_CPP_FACTURE_MIN</span></code></dt>
+<dt id="chorusapi.constants.etat_courant_flux.EtatCourantFlux.IN_INTEGRE"><code class="name">var <span class="ident">IN_INTEGRE</span></code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
-<dt id="chorusapi.constants.syntax_flux_constant.SyntaxFlux.IN_DP_E2_UBL_INVOICE_MIN"><code class="name">var <span class="ident">IN_DP_E2_UBL_INVOICE_MIN</span></code></dt>
+<dt id="chorusapi.constants.etat_courant_flux.EtatCourantFlux.IN_INTEGRE_PARTIEL"><code class="name">var <span class="ident">IN_INTEGRE_PARTIEL</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="chorusapi.constants.etat_courant_flux.EtatCourantFlux.IN_RECU"><code class="name">var <span class="ident">IN_RECU</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="chorusapi.constants.etat_courant_flux.EtatCourantFlux.IN_REJETE"><code class="name">var <span class="ident">IN_REJETE</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="chorusapi.constants.etat_courant_flux.EtatCourantFlux.IN_TRAITE_SE_CPP"><code class="name">var <span class="ident">IN_TRAITE_SE_CPP</span></code></dt>
 <dd>
 <div class="desc"></div>
 </dd>
 </dl>
+</dd>
+<dt id="chorusapi.constants.etat_courant_flux.FluxCode"><code class="flex name class">
+<span>class <span class="ident">FluxCode</span></span>
+<span>(</span><span>code, description)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Retourne le code associé et la description du code</p></div>
 </dd>
 </dl>
 </section>
@@ -82,15 +102,21 @@
 <li><h3><a href="#header-classes">Classes</a></h3>
 <ul>
 <li>
-<h4><code><a title="chorusapi.constants.syntax_flux_constant.SyntaxFlux" href="#chorusapi.constants.syntax_flux_constant.SyntaxFlux">SyntaxFlux</a></code></h4>
+<h4><code><a title="chorusapi.constants.etat_courant_flux.EtatCourantFlux" href="#chorusapi.constants.etat_courant_flux.EtatCourantFlux">EtatCourantFlux</a></code></h4>
 <ul class="">
-<li><code><a title="chorusapi.constants.syntax_flux_constant.SyntaxFlux.IN_DP_E1_CII_16B" href="#chorusapi.constants.syntax_flux_constant.SyntaxFlux.IN_DP_E1_CII_16B">IN_DP_E1_CII_16B</a></code></li>
-<li><code><a title="chorusapi.constants.syntax_flux_constant.SyntaxFlux.IN_DP_E1_UBL_INVOICE" href="#chorusapi.constants.syntax_flux_constant.SyntaxFlux.IN_DP_E1_UBL_INVOICE">IN_DP_E1_UBL_INVOICE</a></code></li>
-<li><code><a title="chorusapi.constants.syntax_flux_constant.SyntaxFlux.IN_DP_E2_CII_FACTURX" href="#chorusapi.constants.syntax_flux_constant.SyntaxFlux.IN_DP_E2_CII_FACTURX">IN_DP_E2_CII_FACTURX</a></code></li>
-<li><code><a title="chorusapi.constants.syntax_flux_constant.SyntaxFlux.IN_DP_E2_CII_MIN_16B" href="#chorusapi.constants.syntax_flux_constant.SyntaxFlux.IN_DP_E2_CII_MIN_16B">IN_DP_E2_CII_MIN_16B</a></code></li>
-<li><code><a title="chorusapi.constants.syntax_flux_constant.SyntaxFlux.IN_DP_E2_CPP_FACTURE_MIN" href="#chorusapi.constants.syntax_flux_constant.SyntaxFlux.IN_DP_E2_CPP_FACTURE_MIN">IN_DP_E2_CPP_FACTURE_MIN</a></code></li>
-<li><code><a title="chorusapi.constants.syntax_flux_constant.SyntaxFlux.IN_DP_E2_UBL_INVOICE_MIN" href="#chorusapi.constants.syntax_flux_constant.SyntaxFlux.IN_DP_E2_UBL_INVOICE_MIN">IN_DP_E2_UBL_INVOICE_MIN</a></code></li>
+<li><code><a title="chorusapi.constants.etat_courant_flux.EtatCourantFlux.IN_EN_ATTENTE_RETRAITEMENT_CPP" href="#chorusapi.constants.etat_courant_flux.EtatCourantFlux.IN_EN_ATTENTE_RETRAITEMENT_CPP">IN_EN_ATTENTE_RETRAITEMENT_CPP</a></code></li>
+<li><code><a title="chorusapi.constants.etat_courant_flux.EtatCourantFlux.IN_EN_ATTENTE_TRAITEMENT_CPP" href="#chorusapi.constants.etat_courant_flux.EtatCourantFlux.IN_EN_ATTENTE_TRAITEMENT_CPP">IN_EN_ATTENTE_TRAITEMENT_CPP</a></code></li>
+<li><code><a title="chorusapi.constants.etat_courant_flux.EtatCourantFlux.IN_EN_COURS_TRAITEMENT_CPP" href="#chorusapi.constants.etat_courant_flux.EtatCourantFlux.IN_EN_COURS_TRAITEMENT_CPP">IN_EN_COURS_TRAITEMENT_CPP</a></code></li>
+<li><code><a title="chorusapi.constants.etat_courant_flux.EtatCourantFlux.IN_INCIDENTE" href="#chorusapi.constants.etat_courant_flux.EtatCourantFlux.IN_INCIDENTE">IN_INCIDENTE</a></code></li>
+<li><code><a title="chorusapi.constants.etat_courant_flux.EtatCourantFlux.IN_INTEGRE" href="#chorusapi.constants.etat_courant_flux.EtatCourantFlux.IN_INTEGRE">IN_INTEGRE</a></code></li>
+<li><code><a title="chorusapi.constants.etat_courant_flux.EtatCourantFlux.IN_INTEGRE_PARTIEL" href="#chorusapi.constants.etat_courant_flux.EtatCourantFlux.IN_INTEGRE_PARTIEL">IN_INTEGRE_PARTIEL</a></code></li>
+<li><code><a title="chorusapi.constants.etat_courant_flux.EtatCourantFlux.IN_RECU" href="#chorusapi.constants.etat_courant_flux.EtatCourantFlux.IN_RECU">IN_RECU</a></code></li>
+<li><code><a title="chorusapi.constants.etat_courant_flux.EtatCourantFlux.IN_REJETE" href="#chorusapi.constants.etat_courant_flux.EtatCourantFlux.IN_REJETE">IN_REJETE</a></code></li>
+<li><code><a title="chorusapi.constants.etat_courant_flux.EtatCourantFlux.IN_TRAITE_SE_CPP" href="#chorusapi.constants.etat_courant_flux.EtatCourantFlux.IN_TRAITE_SE_CPP">IN_TRAITE_SE_CPP</a></code></li>
 </ul>
+</li>
+<li>
+<h4><code><a title="chorusapi.constants.etat_courant_flux.FluxCode" href="#chorusapi.constants.etat_courant_flux.FluxCode">FluxCode</a></code></h4>
 </li>
 </ul>
 </li>
