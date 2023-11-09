@@ -5,8 +5,8 @@ def base_64_encode(data: str):
     return base64.b64encode(data.encode()).decode()
 
 
-def base_64_encode_file(filepath):
-    return base_64_encode(open(filepath).read())
+def base_64_encode_file(filepath, encoding="ISO-8859-1"):
+    return base_64_encode(open(filepath, encoding=encoding).read())
 
 
 def base_64_decode(data: str):

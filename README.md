@@ -12,6 +12,11 @@ Chorus API Package [https://piste.gouv.fr](https://piste.gouv.fr)
 pip install chorus-api
 ```
 
+## 1.0.5
+#### CHANGES
+* Fix **_base_64_encode_file_** method in utils
+* Allow pass encoding
+
 ## 1.0.4
 
 #### CHANGES

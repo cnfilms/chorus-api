@@ -1,9 +1,11 @@
 # Change Log / journal des changements
 
-# 22/08/2023
-## IMPLEMENTATION OF CHORUS API
-
+# 09/11/2023
+## Fix base64 encoding method, Allow user can pass enconding
 
 # 23/08/2023
 ## Add Etat courant du flux pour la methode consulter CR
 ## Reformat code and documentation
+
+# 22/08/2023
+## IMPLEMENTATION OF CHORUS API
