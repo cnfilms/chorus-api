@@ -12,6 +12,10 @@ Chorus API Package [https://piste.gouv.fr](https://piste.gouv.fr)
 pip install chorus-api
 ```
 
+## 1.0.6
+#### CHANGES
+* base64 encode file open file as binary
+
 ## 1.0.5
 #### CHANGES
 * Fix **_base_64_encode_file_** method in utils

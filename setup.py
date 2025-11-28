@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="chorus-api",
-    version="1.0.5",
+    version="1.0.6",
     author="Joel ONIPOH",
     author_email="technique@cinego.net",
     description="Chorus API Package https://piste.gouv.fr",
